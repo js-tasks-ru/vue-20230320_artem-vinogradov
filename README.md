@@ -2,7 +2,7 @@
 
 ## Использование задачника
 
-Подробная инструкция по работе с задачником описана во введении в [00-intro/README.md](00-intro/README.md).
+Подробная инструкция по работе с задачником описана в разделе "Введение".
 
 ## Подготовка
 
@@ -68,7 +68,7 @@ npm run format
   - [Pinia](https://pinia.vuejs.org)
 - Работа с датой и временем
   - [dayjs](https://day.js.org)
-  - [date-fns](https://github.com/uuidjs/uuid)
+  - [date-fns](https://date-fns.org/)
   - [luxon](https://moment.github.io/luxon/)
   - [moment](https://momentjs.com) (не рекомендуется, [deprecated](https://momentjs.com/docs/#/-project-status/))
 - Прочее
