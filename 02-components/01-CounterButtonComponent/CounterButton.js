@@ -1,9 +1,23 @@
+import { update } from 'lodash';
 import { defineComponent } from './vendor/vue.esm-browser.js';
 
 export default defineComponent({
   name: 'CounterButton',
+  props: {
+    count: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+  },
 
-  // Компонент должен иметь входной параметр и порождать событие
+  emits: ['update:count'],
 
-  template: `<button type="button">1</button>`,
+  methods: {
+    increaseValue() {
+      this.$emit('update:count', this.count + 1);
+    },
+  },
+
+  template: `<button type="button" @click="increaseValue">{{ count }}</button>`,
 });
